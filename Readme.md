@@ -113,11 +113,11 @@ Start typing a city name → Get instant weather results
 
 🌐 Live Demo
 
-👉 Live Website: Add your GitHub Pages link here
+👉  [Live Website:](https://rajashreenivasreddy.github.io/ClimaPro-Weather-App/)
 
 🔗 GitHub Repository
 
-👉 [Add your repository link here](https://github.com/RAJASHREENIVASREDDY/ClimaPro-Weather-App)
+👉 [link](https://github.com/RAJASHREENIVASREDDY/ClimaPro-Weather-App)
 
 👨‍💻 Author
 
@@ -136,4 +136,5 @@ You are free to modify and use it as desired.
 ⭐ If you like this project, consider giving it a star!
 
 Your support helps me build more production-ready projects 😊
+
 
