@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>ClimaPro — Premium Weather UI</title>
+
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+    <meta
+      name="description"
+      content="ClimaPro — a premium, production-ready Weather App template built with HTML/CSS/JS and OpenWeatherMap API."
+    />
+  </head>
+  <body>
+    <main class="site">
+      <header class="brand">
+        <div class="logo">
+          <svg
+            width="32"
+            height="32"
+            viewBox="0 0 24 24"
+            fill="none"
+            aria-hidden="true"
+          >
+            <defs>
+              <linearGradient id="g" x1="0" x2="1">
+                <stop offset="0" stop-color="#7B28FF" />
+                <stop offset="1" stop-color="#28D1FF" />
+              </linearGradient>
+            </defs>
+            <path
+              d="M12 2a5 5 0 00-5 5v1H6a4 4 0 000 8h12a4 4 0 000-8h-1V7a5 5 0 00-5-5z"
+              fill="url(#g)"
+            />
+          </svg>
+        </div>
+        <h1>ClimaPro</h1>
+        <p class="tag">Premium Weather UI • Ready to Use</p>
+      </header>
+
+      <section class="panel">
+        <form id="searchForm" class="search">
+          <input
+            id="cityInput"
+            name="city"
+            type="search"
+            placeholder="Enter city or ZIP"
+            aria-label="City"
+            autocomplete="off"
+          />
+          <button id="searchBtn" class="btn">Search</button>
+        </form>
+
+        <div
+          id="status"
+          class="status hidden"
+          role="status"
+          aria-live="polite"
+        ></div>
+
+        <article id="weatherCard" class="card hidden" aria-hidden="true">
+          <div class="card-left">
+            <div class="temp-wrap">
+              <img id="weatherIcon" alt="" class="icon" src="" />
+              <div>
+                <div id="temperature" class="temp">--°C</div>
+                <div id="description" class="desc">--</div>
+              </div>
+            </div>
+
+            <h2 id="cityName" class="city">--</h2>
+          </div>
+
+          <div class="card-right">
+            <ul class="meta">
+              <li><strong>Humidity</strong><span id="humidity">--%</span></li>
+              <li><strong>Wind</strong><span id="wind">-- m/s</span></li>
+              <li><strong>Feels like</strong><span id="feels">--°C</span></li>
+            </ul>
+
+            <div class="cta-row">
+              <a
+                id="openMap"
+                class="link"
+                href="#"
+                target="_blank"
+                rel="noopener"
+                >Open in Map</a
+              >
+              <button id="saveBtn" class="btn ghost">Save preset</button>
+            </div>
+          </div>
+        </article>
+
+        <p id="errorMessage" class="error hidden">
+          City not found — try another query.
+        </p>
+      </section>
+
+      <footer class="footer">
+        <small
+          >Built with OpenWeatherMap • Clean, modular code • MIT License</small
+        >
+      </footer>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
